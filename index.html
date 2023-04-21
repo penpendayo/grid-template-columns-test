@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    .three {
+      display: grid;
+      gap: 2px;
+      grid-template-columns: repeat(3, minmax(250px, 1fr));
+    }
+
+    .autofit {
+      display: grid;
+      gap: 2px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .autofill {
+      display: grid;
+      gap: 2px;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    body>div>div {
+      background-color: rgb(255, 135, 135);
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>3</h1>
+  <div class="three">
+    <div>1111111111</div>
+    <div>2222222222</div>
+    <div>3333333333</div>
+    <div>4444444444</div>
+  </div>
+  <h1>auto-fit</h1>
+
+  <div class="autofit">
+    <div>1111111111</div>
+    <div>2222222222</div>
+    <div>3333333333</div>
+    <div>4444444444</div>
+  </div>
+  <h1>auto-fill</h1>
+
+  <div class="autofill">
+    <div>1111111111</div>
+    <div>2222222222</div>
+    <div>3333333333</div>
+    <div>4444444444</div>
+  </div>
+
+</body>
+
+</html>
